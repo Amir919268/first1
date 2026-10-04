@@ -1,69 +1,94 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="theme-color" content="#121214">
+    <title>Ai TEA — чайный дом в Бишкеке</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center my-title">Мой первый сайт</h1>
-
-        <p class="text-center">
-            Это сайт с использованием Bootstrap и CSS.
-        </p>
-
-        <div class="text-center">
-            <button class="btn btn-primary">Bootstrap</button>
-            <button class="btn btn-success">CSS</button>
+    <header class="hero" id="home">
+        <div class="container">
+            <a class="logo" href="#home">Ai <span>TEA</span></a>
+            <span class="hero-badge">Лавка чая с шариками</span>
+            <h1>BUBBLE TEA <span>| ЧАЙНЫЙ ДОМ</span></h1>
+            <p>Чай с жемчугом, кофе, матча и молочные коктейли, приготовленные с любовью в Бишкеке.</p>
+            <a class="primary-link" href="#menu-section">Посмотреть меню</a>
         </div>
+    </header>
 
-        <div class="row mt-5">
-            <div class="col-md-4">
-                <div class="card p-3 my-card">
-                    <h2>HTML</h2>
-                    <p>Создаёт структуру сайта.</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=uH5sOthgvovJxQeO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+    <main class="container">
+        <section id="menu-section" class="menu-section" aria-labelledby="menu-title">
+            <h2 class="menu-title" id="menu-title">Наше меню</h2>
+            <div class="menu-grid">
+                <section class="menu-cat">
+                    <h3 class="cat-header">Кофе</h3>
+                    <div class="menu-item"><span>Эспрессо</span><span class="dots"></span><strong>120 сом</strong></div>
+                    <div class="menu-item"><span>Американо</span><span class="dots"></span><strong>130 / 160 сом</strong></div>
+                    <div class="menu-item"><span>Латте</span><span class="dots"></span><strong>180 / 200 сом</strong></div>
+                    <div class="menu-item"><span>Капучино</span><span class="dots"></span><strong>170 / 190 сом</strong></div>
+                    <div class="menu-item"><span>Раф</span><span class="dots"></span><strong>220 сом</strong></div>
+                    <div class="menu-item"><span>Флэт уайт</span><span class="dots"></span><strong>160 сом</strong></div>
+                    <div class="menu-item"><span>Мокко</span><span class="dots"></span><strong>180 сом</strong></div>
+                    <h4 class="subheading">Айс кофе</h4>
+                    <div class="menu-item"><span>Айс латте</span><span class="dots"></span><strong>190 / 210 сом</strong></div>
+                    <div class="menu-item"><span>Фраппе с шоколадом</span><span class="dots"></span><strong>200 / 220 сом</strong></div>
+                    <div class="menu-item"><span>Арахисовый латте</span><span class="dots"></span><strong>250 сом</strong></div>
+                </section>
+
+                <section class="menu-cat">
+                    <h3 class="cat-header">Молочные коктейли</h3>
+                    <div class="menu-item"><span>Шоколадное облако</span><span class="dots"></span><strong>240 / 270 сом</strong></div>
+                    <div class="menu-item"><span>Клубничная нежность</span><span class="dots"></span><strong>240 / 270 сом</strong></div>
+                    <div class="menu-item"><span>Ванильная классика</span><span class="dots"></span><strong>240 / 270 сом</strong></div>
+                    <div class="menu-item"><span>Бананово-клубничный рай</span><span class="dots"></span><strong>240 / 270 сом</strong></div>
+                    <div class="menu-item"><span>Орео мечта</span><span class="dots"></span><strong>240 / 270 сом</strong></div>
+                    <h4 class="subheading">Фраппе · 0,5 / 0,7 л</h4>
+                    <div class="menu-item"><span>Баунти шейк</span><span class="dots"></span><strong>260 / 290 сом</strong></div>
+                    <div class="menu-item"><span>Клубничное облако</span><span class="dots"></span><strong>260 / 290 сом</strong></div>
+                    <div class="menu-item"><span>Персиковая нежность</span><span class="dots"></span><strong>260 / 290 сом</strong></div>
+                </section>
+
+                <section class="menu-cat">
+                    <h3 class="cat-header">Бабл-ти и матча</h3>
+                    <div class="menu-item"><span>Классический бабл-ти · 0,5 / 0,7 л</span><span class="dots"></span><strong>220 / 250 сом</strong></div>
+                    <div class="menu-item"><span>Тайский чай · 0,5 / 0,7 л</span><span class="dots"></span><strong>220 / 250 сом</strong></div>
+                    <div class="menu-item"><span>Манго-матча · 0,5 / 0,7 л</span><span class="dots"></span><strong>270 / 300 сом</strong></div>
+                    <div class="menu-item"><span>Клубника-матча · 0,5 / 0,7 л</span><span class="dots"></span><strong>270 / 300 сом</strong></div>
+                    <div class="menu-item"><span>Орео-матча · 0,5 / 0,7 л</span><span class="dots"></span><strong>270 / 300 сом</strong></div>
+                    <div class="menu-item"><span>Матча латте · 0,5 / 0,7 л</span><span class="dots"></span><strong>200 / 220 сом</strong></div>
+                </section>
+
+                <section class="menu-cat">
+                    <h3 class="cat-header">Айс-ти и лимонад</h3>
+                    <div class="menu-item"><span>Цитрусовый айс-ти · 0,5 / 0,7 л</span><span class="dots"></span><strong>180 / 200 сом</strong></div>
+                    <div class="menu-item"><span>Ягодный айс-ти · 0,5 / 0,7 л</span><span class="dots"></span><strong>180 / 200 сом</strong></div>
+                    <div class="menu-item"><span>Персиковый айс-ти · 0,5 / 0,7 л</span><span class="dots"></span><strong>180 / 200 сом</strong></div>
+                    <div class="menu-item"><span>Юдзу-дыня · 0,5 / 0,7 л</span><span class="dots"></span><strong>180 / 200 сом</strong></div>
+                    <h4 class="subheading">Чай</h4>
+                    <div class="menu-item"><span>Чёрный чай с лимоном</span><span class="dots"></span><strong>60 сом</strong></div>
+                    <div class="menu-item"><span>Зелёный чай с лимоном</span><span class="dots"></span><strong>60 сом</strong></div>
+                </section>
             </div>
+        </section>
 
-            <div class="col-md-4">
-                <div class="card p-3 my-card">
-                    <h2>CSS</h2>
-                    <p>Изменяет внешний вид сайта.</p>
-                    <iframe  src="https://www.youtube.com/embed/VrFK4IdsX-8?si=Uyz82m7l9Bpcx0D5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+        <section id="contacts-section" class="contacts-section" aria-labelledby="contacts-title">
+            <h2 class="menu-title" id="contacts-title">Контакты</h2>
+            <div class="info-bar">
+                <article class="info-card"><h3>Адрес</h3><p>Восток 5, ТЦ «Арбат»<br>Chyi 32b, Бишкек</p></article>
+                <article class="info-card"><h3>Время работы</h3><p>Пн–Пт: 08:00–22:00<br>Сб–Вс: 10:00–22:00</p></article>
+                <article class="info-card"><h3>Связаться</h3><p><br>Instagram: @aitea.kg</p></article>
             </div>
+        </section>
+    </main>
 
-            <div class="col-md-4">
-                <div class="card p-3 my-card">
-                    <h2>Bootstrap</h2>
-                    <p>Даёт готовые стили.</p>
-                    <iframe src="https://www.youtube.com/embed/MyCvTSjkD74?si=xt5iUFrM1zK5A2aW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                    frameborder="0"></iframe>
-                </div>
-            </div>
-            <h2>Bootstrap (также известен как Twitter Bootstrap[4][5][6]) — популярный[7][8] CSS-фреймворк с открытым исходным кодом для создания сайтов и веб-приложений. Включает в себя HTML- и CSS-шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения.
+    <footer class="footer"><p>© Ai TEA · Бишкек</p></footer>
 
-Bootstrap использует современные наработки в области CSS, JavaScript и HTML, поэтому использование данного инструмента не всегда может быть правильным решением при использовании старых браузеров[9].
-
-Bootstrap является одним из самых популярных проектов на GitHub: у него около 170 тысяч звёзд[8].
-
-История
-Bootstrap начала разрабатываться как внутренняя библиотека компании Twitter под названием Twitter Blueprint. После нескольких месяцев разработки он был открыт, 19 августа 2011 года, под названием Bootstrap[10].
-
-Основными нововведениями второй версии, появившейся 31 января 2012 года, стали 12-колоночная сетка и поддержка адаптивности[11]. С этого момента фреймворк позволяет создавать страницы, которые подстраиваются под ширину экрана.
-</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-zUKvLoRaCVB6MggWn97oyPTKHSKCpGwXAv-TcpchQ&s=10" alt="">
- <h2></h2>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/HsCPy2JfKhc?si=SUvuiz1Jq3Jwudxv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-
-
-    
+    <nav class="bottom-nav" aria-label="Основная навигация">
+        <a href="#home"><span aria-hidden="true">⌂</span><small>Главная</small></a>
+        <a href="#menu-section"><span aria-hidden="true">☰</span><small>Меню</small></a>
+        <a href="#contacts-section"><span aria-hidden="true">⌖</span><small>Контакты</small></a>
+    </nav>
 </body>
 </html>
